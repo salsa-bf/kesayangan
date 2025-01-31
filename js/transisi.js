@@ -96,7 +96,7 @@ var PageTransitions = (function () {
             scale: [14, 1],
             opacity: [0, 1],
             easing: "easeOutCirc",
-            duration: 2000,
+            duration: 1000,
             delay: (el, i) => 1000 * i,
           });
         break;
@@ -216,7 +216,7 @@ var PageTransitions = (function () {
             translateZ: 0,
             easing: "easeOutExpo",
             duration: 1200,
-            delay: (el, i) => 70 * i,
+            delay: (el, i) => 120 * i,
           });
 
         break;
@@ -226,10 +226,10 @@ var PageTransitions = (function () {
         var ml4 = {};
         ml4.opacityIn = [0, 1];
         ml4.scaleIn = [0.2, 1];
-        ml4.scaleOut = 3;
+        ml4.scaleOut = 4;
         ml4.durationIn = 700;
         ml4.durationOut = 500;
-        ml4.delay = 1100;
+        ml4.delay = 1000;
 
         anime
           .timeline({
@@ -278,9 +278,23 @@ var PageTransitions = (function () {
             delay: ml4.delay,
           })
           .add({
+            targets: ".ml4 .letters-4",
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn,
+          })
+          .add({
+            targets: ".ml4 .letters-4",
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay,
+          })
+          .add({
             targets: ".ml4",
             opacity: 1,
-            duration: 500,
+            duration: 1000,
             delay: 500,
           });
         break;
