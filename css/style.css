@@ -83,7 +83,7 @@ body {
 }
 
 .ml16 {
-  padding: 40px 0;
+  /* padding: 40px 0; */
   font-weight: 800;
   font-size: 2em;
   text-transform: uppercase;
@@ -240,10 +240,18 @@ body {
 }
 
 #gambar {
-  margin-bottom: 10px;
-  width: 150px;
+  margin-top: 20px;
+  width: 250px;
   border-radius: 14px;
-  border: 2px solid #f5f5f5;
+  border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+  border-width: 4px;
+  border-style: solid;
+  padding: 5px;
+}
+
+#gambar:hover {
+  width: 270px;
+  transition: 0.3s;
 }
 
 .tombolmelayang {
