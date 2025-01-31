@@ -96,8 +96,8 @@ var PageTransitions = (function () {
             scale: [14, 1],
             opacity: [0, 1],
             easing: "easeOutCirc",
-            duration: 1000,
-            delay: (el, i) => 1000 * i,
+            duration: 500,
+            delay: (el, i) => 500 * i,
           });
         break;
       case 2:
@@ -117,7 +117,7 @@ var PageTransitions = (function () {
             targets: ".ml16 .letter",
             translateY: [-100, 0],
             easing: "easeOutExpo",
-            duration: 1500,
+            duration: 1000,
             delay: (el, i) => 50 * i,
           });
         break;
@@ -287,9 +287,9 @@ var PageTransitions = (function () {
             targets: ".ml4 .letters-4",
             opacity: 0,
             scale: ml4.scaleOut,
-            duration: ml4.durationOut,
+            duration: 2000,
             easing: "easeInExpo",
-            delay: ml4.delay,
+            delay: 2000,
           })
           .add({
             targets: ".ml4",
@@ -317,14 +317,14 @@ var PageTransitions = (function () {
             translateZ: 0,
             opacity: [0, 1],
             easing: "easeOutExpo",
-            duration: 1200,
+            duration: 1000,
             delay: (el, i) => 500 + 30 * i,
           })
           .add({
             targets: ".ml12 .letter",
             opacity: [1, 1],
             easing: "easeInExpo",
-            duration: 1100,
+            duration: 1000,
             delay: (el, i) => 100 + 30 * i,
           });
         break;

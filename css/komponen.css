@@ -131,9 +131,9 @@ body {
 
 .tempat-tombol button,
 .mulai-sekarang {
-  background: #f5f5f5;
-  color: #303030;
-  border: 2px solid #303030;
+  color: #f5f5f5;
+  background: #303030;
+  border: 2px solid #ffffff;
   padding: 14px 55px 14px 55px;
   font-size: 18px;
   border-radius: 8px;
@@ -151,9 +151,9 @@ body {
 
 .mulai-sekarang:hover {
   cursor: pointer;
-  background: #303030;
-  color: #f5f5f5;
-  border: 2px solid #f5f5f5;
+  background: #f5f5f5;
+  color: #303030;
+  border: 2px solid #303030;
   padding: 14px 55px 14px 55px;
   font-size: 18px;
   border-radius: 8px;

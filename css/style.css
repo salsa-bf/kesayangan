@@ -39,7 +39,7 @@ body {
 .ml1 {
   font-weight: 900;
   font-size: 2em;
-  color: #f5f5f5;
+  color: linear-gradient(45deg, #f3ec78, #af4261);
 }
 
 .ml1 .letter {
@@ -60,8 +60,46 @@ body {
   left: 0;
   height: 3px;
   width: 100%;
-  background-color: #f5f5f5;
   transform-origin: 0 0;
+  background: linear-gradient(130deg, #3b4df0, #ffffff, #f341db);
+  background-size: 200% 200%;
+  -webkit-animation: Animation 5s ease infinite;
+  -moz-animation: Animation 5s ease infinite;
+  animation: Animation 5s ease infinite;
+}
+
+@-webkit-keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+@-moz-keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+@keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
 }
 
 .ml1 .line1 {
@@ -74,7 +112,7 @@ body {
 
 .ml15 {
   font-weight: 800;
-  font-size: 2.4em;
+  font-size: 2em;
   text-transform: uppercase;
 }
 
@@ -83,7 +121,7 @@ body {
 }
 
 .ml16 {
-  padding: 10px 0;
+  padding: 0 15px;
   font-weight: 800;
   font-size: 2em;
   text-transform: uppercase;
@@ -96,7 +134,7 @@ body {
 
 .ml11 {
   font-weight: 700;
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
 .ml11 .text-wrapper {
@@ -149,7 +187,7 @@ body {
 .ml2 {
   padding: 20px 20px;
   font-weight: 900;
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
 .ml2 .letter {
@@ -260,36 +298,9 @@ body {
 }
 
 #gambar:hover {
+  cursor: crosshair;
   width: 270px;
   transition: 0.3s;
-}
-
-.tombolmelayang {
-  background: #f5f5f5;
-  display: block;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  color: #303030;
-  font-size: 30px;
-  font-weight: bold;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  text-decoration: none;
-  transition: ease all 0.3s;
-  position: fixed;
-  z-index: 13123123123123;
-  right: 30px;
-  bottom: 30px;
-  border: 2px solid #303030;
-}
-
-.tombolmelayang:hover {
-  cursor: pointer;
-  background: #303030;
-  color: #f5f5f5;
-  border: 2px solid #f5f5f5;
 }
 
 a {
